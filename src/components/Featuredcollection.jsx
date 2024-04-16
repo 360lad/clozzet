@@ -1,7 +1,7 @@
 // import Leatherjacket from"../assets/images/leather-jacket.png"
 // import Featuredcollections from "./Featuredcollections"
 
-function Featuredcollection({img,title,price}){
+function Featuredcollection({img,title,price,cart,setCart}){
 return(
 <div className=" group w-[400px] h-[400px]">
 <div className="w-[300px] h-[300px] bg-[#f5f0f0] flex justify-center items-center object-contain p-[2em]">
