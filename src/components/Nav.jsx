@@ -23,7 +23,7 @@ function Nav(){
 
             <ul className="flex justify-center items-center gap-10">
                 <Link to="/Cartpage"> <FaShoppingCart className="text-[40px]" /></Link>
-            
+            <span className="rounded-full bg-[#218365] text-[white] p-[.2em] absolute top-[-1%] right-[10%]">0</span>
                 <Link to="/Signup">  <h2>Sign Up</h2></Link>
                  
                 <button className="border border-black rounded-full px-[2.5em] hidden">Login</button>
