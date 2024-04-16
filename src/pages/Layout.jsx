@@ -1,10 +1,10 @@
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
-
-function Layout({children}){
+function Layout({children, cart, setCart}){
+    
     return(
         <div className="flex flex-col ">
-            <Nav/>
+            <Nav cart={cart} setCart={setCart}  />
             <main className=" flex-1 min-h-[100vh]">
                 {children}
             </main>

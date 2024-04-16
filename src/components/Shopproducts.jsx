@@ -21,39 +21,39 @@ import zoochi from "../assets/shop-images/ZOOSHI-COBALT.png"
 import knitted from "../assets/shop-images/knitted-sweater.png"
 
 
-function Shopproducts(){
+function Shopproducts({cart,setCart}){
     return(
         <div>
-            <div className="flex">
-            <Shopproduct img={jeans} title="Blue Rugeed Jeans" price="Ksh.2,250"/>
-            <Shopproduct img={sweater} title="Sweat Shirts" price="Ksh.2,250"/>
-            <Shopproduct img={banquet} title="Red Banquet Dress" price="Ksh.10,250"/>
-            <Shopproduct img={denim} title="Blue denim Jacket" price="Ksh.2,250"/>
-
+            <div className="flex flex-wrap">
+            <Shopproduct cart={cart} setCart={setCart}  img={jeans} title="Blue Rugeed Jeans" price="Ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={sweater} title="Sweat Shirts" price="Ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={banquet} title="Red Banquet Dress" price="Ksh.10,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={denim} title="Blue denim Jacket" price="Ksh.2,250"/>
+ 
             </div>
-            <div className="flex">
-            <Shopproduct img={leather} title="Brown Leather Jacket" price="ksh.2,250"/>
-            <Shopproduct img={watch} title="Quartz Watch "  price="ksh.2,250"/>
-            <Shopproduct img={women} title="Women Denim Jeans" price="ksh.2,250"/>
-            <Shopproduct img={brown} title="Brown Handbag"  price="ksh.2,250"/>
+            <div className="flex flex-wrap ">
+            <Shopproduct cart={cart} setCart={setCart}  img={leather} title="Brown Leather Jacket" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={watch} title="Quartz Watch "  price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={women} title="Women Denim Jeans" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={brown} title="Brown Handbag"  price="ksh.2,250"/>
                         </div>
-            <div className="flex">
-            <Shopproduct img={unisex} title="Unisex Graphic T-shirt" price="ksh.2,250"/>
-            <Shopproduct img={bomber} title="Black Bomber Jacket" price="ksh.2,250"/>
-            <Shopproduct img={pallazo} title="Pleated Pallazo Pants "price="ksh.2,250"/>
-            <Shopproduct img={pure} title="Pure Leather Shoes " price="ksh.2,250"/>
+            <div className="flex flex-wrap">
+            <Shopproduct cart={cart} setCart={setCart}  img={unisex} title="Unisex Graphic T-shirt" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={bomber} title="Black Bomber Jacket" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={pallazo} title="Pleated Pallazo Pants "price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={pure} title="Pure Leather Shoes " price="ksh.2,250"/>
             </div>
-            <div className="flex">
-            <Shopproduct  img={sperneti} title="" price="ksh.2.250"/> 
-            <Shopproduct  img={nike} title="" price="ksh.2.250"/>
-            <Shopproduct  img={cocktail} title="" price="ksh.2.250"/>
-            <Shopproduct  img={offshoulder} title="" price="ksh.2.250"/>  
+            <div className="flex flex-wrap">
+            <Shopproduct cart={cart} setCart={setCart}  img={sperneti} title="" price="ksh.2.250"/> 
+            <Shopproduct cart={cart} setCart={setCart}  img={nike} title="" price="ksh.2.250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={cocktail} title="" price="ksh.2.250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={offshoulder} title="" price="ksh.2.250"/>  
             </div>
-            <div className="flex">
-            <Shopproduct img={pleated} title="Airsense Pleated Pants" price="ksh.2,250"/>
-            <Shopproduct img={smartwatch} title="Classy Smart Watch" price="ksh.2,250"/>
-            <Shopproduct img={zoochi} title="Blue Platform  Heels" price="ksh.2,250"/>
-            <Shopproduct img={knitted} title="Strip Knitted Sweater" price="ksh.2,250"/>
+            <div className="flex flex-wrap">
+            <Shopproduct cart={cart} setCart={setCart}  img={pleated} title="Airsense Pleated Pants" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={smartwatch} title="Classy Smart Watch" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={zoochi} title="Blue Platform  Heels" price="ksh.2,250"/>
+            <Shopproduct cart={cart} setCart={setCart}  img={knitted} title="Strip Knitted Sweater" price="ksh.2,250"/>
 
             </div>
         </div>

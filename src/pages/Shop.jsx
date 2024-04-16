@@ -2,10 +2,10 @@ import { FaSearch } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Shopproducts from "../components/Shopproducts";
 
-function Shop (){
+function Shop ({cart,setCart}){
     return(
      <div className="container">
-        <div className="flex  justify-center item-center border rounded-full w-[40%]"> 
+        <div className="flex  justify-center flex-wrap item-center border rounded-full w-[40%]"> 
         <div>
             <FaSearch />
 
@@ -25,7 +25,7 @@ function Shop (){
             </div>
         </div>
         <div>
-            <Shopproducts/>
+            <Shopproducts cart={cart} setCart={setCart} />
         </div>
      </div>   
     )
