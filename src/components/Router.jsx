@@ -8,7 +8,7 @@ import Signup from "../pages/Signup";
 import Cartpage from "../pages/Cartpage";
 import { useState } from "react";
 function Router() {
-  const [cart,setCart]=useState([]);
+  const [cart,setCart]=useState([]);                          
   return (
     <BrowserRouter>
       <Routes>
@@ -23,7 +23,7 @@ function Router() {
         <Route
           path="/Shop"
           element={
-            <Layout>
+            <Layout cart={cart} setCart={setCart}>
               <Shop  cart={cart} setCart={setCart}  />
             </Layout>
           }
@@ -31,7 +31,7 @@ function Router() {
         <Route
           path="/Signup"
           element={
-            <Layout>
+            <Layout cart={cart} setCart={setCart}>
               <Signup />
             </Layout>
           }
@@ -45,9 +45,9 @@ function Router() {
           }
         />
         <Route
-          path="/Cartpage"
+          path="/cart"
           element={
-            <Layout>
+            <Layout cart={cart} setCart={setCart}> 
               <Cartpage  cart={cart} setCart={setCart}  />
             </Layout>
           }
@@ -55,7 +55,7 @@ function Router() {
         <Route
           path="*"
           element={
-            <Layout>
+            <Layout cart={cart} setCart={setCart}>
               <NotFound />
             </Layout>
           }
